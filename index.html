@@ -21,82 +21,88 @@
   </head>
   <body>
     <header>
-      <div class="header__logo-nav-flex">
-        <img src="./images/logo.svg" alt="Blogr's logo" class="header__logo" />
-        <img
-          src="./images/icon-hamburger.svg"
-          alt="menu control button"
-          class="header__menu-btn"
-        />
-        <nav class="header__nav" aria-label="primary">
-          <div class="header__nav-info">
-            <div class="header__nav-item header__nav-item--sub-menu">
-              <span role="button" class="header__sub-menu-item">
-                Product
-                <picture>
-                  <source
-                    srcset="./images/icon-arrow-light.svg"
-                    media="(min-width: 768px)"
-                  />
-                  <img src="./images/icon-arrow-dark.svg" alt="down arrow" />
-                </picture>
-              </span>
-              <div class="header__sub-menu-items-cont" role="menu">
-                <a href="#" class="header__nav-item">Overview</a>
-                <a href="#" class="header__nav-item">Pricing</a>
-                <a href="#" class="header__nav-item">Marketplace</a>
-                <a href="#" class="header__nav-item">Features</a>
-                <a href="#" class="header__nav-item">Integrations</a>
+      <div class="header__wrapper">
+        <div class="header__logo-nav-flex">
+          <img
+            src="./images/logo.svg"
+            alt="Blogr's logo"
+            class="header__logo"
+          />
+          <img
+            src="./images/icon-hamburger.svg"
+            alt="menu control button"
+            class="header__menu-btn"
+          />
+          <nav class="header__nav off" aria-label="primary">
+            <div class="header__nav-info">
+              <div class="header__nav-item header__nav-item--sub-menu">
+                <span role="button" class="header__sub-menu-item">
+                  Product
+                  <picture>
+                    <source
+                      srcset="./images/icon-arrow-light.svg"
+                      media="(min-width: 768px)"
+                    />
+                    <img src="./images/icon-arrow-dark.svg" alt="down arrow" />
+                  </picture>
+                </span>
+                <div class="header__sub-menu-items-cont off" role="menu">
+                  <a href="#" class="header__nav-item">Overview</a>
+                  <a href="#" class="header__nav-item">Pricing</a>
+                  <a href="#" class="header__nav-item">Marketplace</a>
+                  <a href="#" class="header__nav-item">Features</a>
+                  <a href="#" class="header__nav-item">Integrations</a>
+                </div>
+              </div>
+              <div class="header__nav-item header__nav-item--sub-menu">
+                <span role="button" class="header__sub-menu-item">
+                  Company
+                  <picture>
+                    <source
+                      srcset="./images/icon-arrow-light.svg"
+                      media="(min-width: 768px)"
+                    />
+                    <img src="./images/icon-arrow-dark.svg" alt="down arrow" />
+                  </picture>
+                </span>
+                <div class="header__sub-menu-items-cont off" role="menu">
+                  <a href="#" class="header__nav-item">About</a>
+                  <a href="#" class="header__nav-item">Team</a>
+                  <a href="#" class="header__nav-item">Blog</a>
+                  <a href="#" class="header__nav-item">Careers</a>
+                </div>
+              </div>
+              <div class="header__nav-item header__nav-item--sub-menu">
+                <div role="button" class="header__sub-menu-item">
+                  Connect
+                  <picture>
+                    <source
+                      srcset="./images/icon-arrow-light.svg"
+                      media="(min-width: 768px)"
+                    />
+                    <img src="./images/icon-arrow-dark.svg" alt="down arrow" />
+                  </picture>
+                </div>
+                <div class="header__sub-menu-items-cont off" role="menu">
+                  <a href="#" class="header__nav-item">Contact</a>
+                  <a href="#" class="header__nav-item">Newsletter</a>
+                  <a href="#" class="header__nav-item">LinkedIn</a>
+                </div>
               </div>
             </div>
-            <div class="header__nav-item header__nav-item--sub-menu">
-              <span role="button" class="header__sub-menu-item">
-                Company
-                <picture>
-                  <source
-                    srcset="./images/icon-arrow-light.svg"
-                    media="(min-width: 768px)"
-                  />
-                  <img src="./images/icon-arrow-dark.svg" alt="down arrow" />
-                </picture>
-              </span>
-              <div class="header__sub-menu-items-cont" role="menu">
-                <a href="#" class="header__nav-item">About</a>
-                <a href="#" class="header__nav-item">Team</a>
-                <a href="#" class="header__nav-item">Blog</a>
-                <a href="#" class="header__nav-item">Careers</a>
-              </div>
+            <div class="header__nav-users">
+              <a href="#" class="header__nav-item">Login</a>
+              <a href="#" class="header__nav-item sign-up">Sign Up</a>
             </div>
-            <div class="header__nav-item header__nav-item--sub-menu">
-              <div role="button" class="header__sub-menu-item">
-                Connect
-                <picture>
-                  <source
-                    srcset="./images/icon-arrow-light.svg"
-                    media="(min-width: 768px)"
-                  />
-                  <img src="./images/icon-arrow-dark.svg" alt="down arrow" />
-                </picture>
-              </div>
-              <div class="header__sub-menu-items-cont" role="menu">
-                <a href="#" class="header__nav-item">Contact</a>
-                <a href="#" class="header__nav-item">Newsletter</a>
-                <a href="#" class="header__nav-item">LinkedIn</a>
-              </div>
-            </div>
-          </div>
-          <div class="header__nav-users">
-            <a href="#" class="header__nav-item">Login</a>
-            <a href="#" class="header__nav-item">Sign Up</a>
-          </div>
-        </nav>
+          </nav>
+        </div>
+        <h1 class="header__title">A modern publishing platform</h1>
+        <p class="header__sub-title">
+          Grow your audience and build your online brand
+        </p>
+        <button type="button" class="header__cta start">Start for Free</button>
+        <button type="button" class="header__cta more">Learn More</button>
       </div>
-      <h1 class="header__title">A modern publishing platform</h1>
-      <p class="header__sub-title">
-        Grow your audience and build your online brand
-      </p>
-      <button type="button" class="header__cta start">Start for Free</button>
-      <button type="button" class="header__cta more">Learn More</button>
     </header>
     <main>
       <section id="features">
@@ -223,6 +229,6 @@
         </nav>
       </div>
     </footer>
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
   </body>
 </html>

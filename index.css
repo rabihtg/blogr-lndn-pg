@@ -58,7 +58,87 @@ a {
 }
 /* --------------------------------------------------------------------------- Header
 -------------------------------------------------------------------------------------------------------------------- */
-
+header {
+  padding: 3rem 0 10rem;
+  background: linear-gradient(90deg, var(--Very-light-red), var(--Light-red));
+}
+.header__wrapper {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+/* --------------------- Nav */
+.header__logo-nav-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.header__nav {
+  position: absolute;
+  background-color: var(--White);
+  width: 100%;
+  right: 0;
+  top: 65px;
+  border-radius: 5px;
+  text-align: center;
+  font-family: var(--ff-op);
+  font-weight: 600;
+  color: var(--Very-dark-blue);
+}
+.header__nav.off {
+  max-height: 5px;
+  width: 0;
+  overflow: hidden;
+  transition: max-height 0.5s cubic-bezier(0, 1, 1, 1), padding 0.5s linear,
+    width 0.3s 0.5s linear;
+}
+.header__nav.on {
+  padding: 1rem;
+  overflow: auto;
+  transition: max-height 0.5s ease-in, padding 0.2s ease-in;
+  max-height: 1000px;
+}
+.header__nav-info {
+  border-bottom: 1px solid var(--Grayish-blue);
+}
+.header__nav-users {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.header__nav-item.sign-up {
+  background: linear-gradient(
+    to right,
+    var(--Very-light-red),
+    var(--Light-red)
+  );
+  align-self: center;
+  padding: 1rem 3rem;
+  color: white;
+  border-radius: 40px;
+}
+/* -------------------------  Sub-Menu items */
+.header__nav-item--sub-menu {
+  margin: 1rem 0;
+}
+.header__sub-menu-items-cont {
+  position: relative;
+  background-color: var(--Grayish-blue);
+}
+.header__sub-menu-items-cont.off {
+  max-height: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.75s cubic-bezier(0, 1, 1, 1);
+}
+.header__sub-menu-items-cont.on {
+  padding: 1rem 0;
+  overflow: auto;
+  transition: max-height 0.5s ease-in;
+  max-height: 600px;
+}
 /* --------------------------------------------------------------------------- Design
 -------------------------------------------------------------------------------------------------------------------- */
 
