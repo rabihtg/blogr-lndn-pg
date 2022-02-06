@@ -16,7 +16,6 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
     <title>Frontend Mentor | [Blogr]</title>
   </head>
   <body>
@@ -31,12 +30,12 @@
           <img
             src="./images/icon-hamburger.svg"
             alt="menu control button"
-            class="header__menu-btn"
+            class="header__menu-btn desktop-hidden"
           />
           <nav class="header__nav off" aria-label="primary">
             <div class="header__nav-info">
               <div class="header__nav-item header__nav-item--sub-menu">
-                <span role="button" class="header__sub-menu-item">
+                <span role="button" class="header__sub-menu-item" tabindex="1">
                   Product
                   <picture>
                     <source
@@ -55,7 +54,7 @@
                 </div>
               </div>
               <div class="header__nav-item header__nav-item--sub-menu">
-                <span role="button" class="header__sub-menu-item">
+                <span role="button" class="header__sub-menu-item" tabindex="2">
                   Company
                   <picture>
                     <source
@@ -73,7 +72,7 @@
                 </div>
               </div>
               <div class="header__nav-item header__nav-item--sub-menu">
-                <span role="button" class="header__sub-menu-item">
+                <span role="button" class="header__sub-menu-item" tabindex="3">
                   Connect
                   <picture>
                     <source
@@ -110,7 +109,7 @@
     </header>
     <main>
       <section id="features">
-        <div id="infras">
+        <div id="design">
           <h2 class="design__title">Designed for the future</h2>
           <div class="design__flex-cont">
             <picture>
